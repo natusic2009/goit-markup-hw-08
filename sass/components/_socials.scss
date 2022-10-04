@@ -1,0 +1,38 @@
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    justify-content: center;
+  }
+  
+  .socials li {
+    background-color: var(--main-background-color);
+    border-radius: 50%;
+  }
+  .socials_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 44px;
+    height: 44px;
+  
+    color: var(--main-text-icon);
+    background-color: var(--main-background-color);
+    transition: background-color 250ms var(--timing-func), color 250ms var(--timing-func);
+    border-radius: 50%;
+    &:hover,
+    &:focus {
+      color: var(--main-background-color);
+      background-color: var(--accent-color);
+    }
+  }
+  
+  .socials_icon {
+    fill: currentColor;
+  }
+  .contacts-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }

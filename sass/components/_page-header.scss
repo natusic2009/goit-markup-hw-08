@@ -1,0 +1,133 @@
+header_page-header {
+    color: var(--white-color-text);
+    border-bottom: 1px solid var(--horisontal-line);
+  }
+  
+  .header_nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  a {
+    text-decoration: none;
+  }
+  .header_nav-list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+    margin-left: 93px;
+    position: relative;
+  }
+  
+  .features_list {
+    display: flex;
+    gap: 30px;
+  
+    list-style: none;
+    padding-left: 0;
+  
+    margin: 0;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  
+  .header_item {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  .contact_icon {
+    fill: currentColor;
+    margin-right: 10px;
+    &:hover,
+    &:focus {
+      stroke: var(--accent-color);
+    }
+  }
+  
+  .header_nav-link {
+    color: var(--main-text-color);
+    transition: color 250ms var(--timing-func);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      transition: color 250ms var(--timing-func);
+    }
+  }
+  
+  .header_nav-link-current {
+    color: var(--accent-color);
+  }
+  
+  .header_nav-link-current,
+  .header_nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    position: relative;
+  }
+  
+  .header_nav-link::after,
+  .header_nav-link-current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    color: var(--accent-color);
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 250ms var(--timing-func);
+  }
+  
+  .header_nav-link-current::after {
+    opacity: 1;
+  }
+  .header_nav-link:hover::after,
+  .header_nav-link-current:hover::after {
+    opacity: 1;
+  }
+  
+  .contant_nav {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .contant_nav .contact_link {
+    display: flex;
+    margin-right: 50px;
+  }
+  
+  .contact_link {
+    color: var(--title-text-color);
+    transition: color 250ms var(--timing-func);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    align-items: center;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      transition: color 250ms var(--timing-func);
+    }
+  }
