@@ -1,24 +1,26 @@
-.logo-blue,
-.logo-black,
-.logo-white {
-  list-style: none;
-
-  padding-left: 0;
-  margin-left: 0;
-  margin: 0;
-  color: var(--accent-color);
-  text-decoration: none;
-  font-style: normal;
+.header_logo {
+  margin-right: auto;
+  color: var(--black-txt-color);
+  font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-
-  line-height: 1.3;
-  font-family: Raleway;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
-.logo-black {
-  color: var(--logo-black);
+@media screen and (min-width: 1200px) {
+  .header_logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-right: 92px;
+  }
 }
 
-.logo-white {
-  color: var(--main-background-color);
+.header_logo:active, .header_logo:focus, .header_logo:hover {
+  color: var(--black-txt-color);
+}
+
+.logo_txt {
+  color: #2196f3;
 }
